@@ -15,5 +15,11 @@
 </script>
 
 <style>
-  /* CSS */
+/* CSS */
+html, body {
+  height: 100%;
+}
+#app {
+  height: inherit;
+}
 </style>

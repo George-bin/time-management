@@ -53,6 +53,7 @@ function createWindow () {
   mainWindow.loadURL(winURL)
 
   mainWindow.on('close', (e) => {
+    if (isMac) return
     e.preventDefault()// 阻止默认行为，一定要有
     dialog.showMessageBox({
       type: 'warning',
